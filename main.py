@@ -67,7 +67,7 @@ def create_tables(engine):
     Base.metadata.create_all(engine)
 
 
-engine = sqlalchemy.create_engine(DSN)
+engine = sq.create_engine(DSN)
 create_tables(engine)
 
 with open('fixtures.json', encoding='utf-8') as f:
